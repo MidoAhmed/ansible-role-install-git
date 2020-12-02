@@ -2,30 +2,18 @@
 
 galaxy_info:
   author: MEK
-  #role_name: git 
+  role_name: git 
   description: Installs Git, a distributed version control system, on any RHEL/CentOS or Debian/Ubuntu Linux system.
   license: 3-clause BSD license.
   min_ansible_version: 2.3
-  platforms:
+  platforms:    
     - name: Ubuntu
       versions:
-        14.04
-  categories:
-    #- cloud
-    #- cloud:ec2
-    #- cloud:gce
-    #- cloud:rax
-    #- clustering
-    #- database
-    #- database:nosql
-    #- database:sql
-    #- development
-    #- monitoring
-    #- networking
-    #- packaging
-    #- system
-    #- web
-
-
-
-dependencies:
+        - 18.04
+  galaxy_tags:
+    - development
+    - system
+    - git
+    - vcs
+    - source
+    - code
