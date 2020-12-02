@@ -3,6 +3,14 @@ language: python
 python:
   - "3.6"      # current default Python on Travis CI
 
+
+env:
+  - distro=ubuntu1204
+  - distro=ubuntu1404
+  - distro=ubuntu1604
+  - distro=ubuntu1804
+  - distro=ubuntu2004
+
 # Install ansible
 addons:
   apt:
