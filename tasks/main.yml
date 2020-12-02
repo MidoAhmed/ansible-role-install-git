@@ -11,12 +11,14 @@
     msg: "{{ hostvars[inventory_hostname].ansible_distribution_major_version }}"
 
 
-# - name: Update apt cache (Debian).
-#   apt: update_cache=true cache_valid_time=86400
-#   when: ansible_os_family == 'Debian'
+- name: Update apt cache (Debian).
+  apt: update_cache=true cache_valid_time=86400
+  when: ansible_os_family == 'Debian'
+  
 
-- name: install git
-  become: true
-  package:
+- name: Ensure git is installed (Debian).
+  apt:
     name: git
     state: '{{git_state}}'
+  when:
+    - ansible_os_family == 'Debian'
