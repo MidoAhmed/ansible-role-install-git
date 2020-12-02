@@ -25,6 +25,6 @@ script:
   - ${PWD}/tests/test.sh
 
   # my test code
-  - 'docker exec ${container_id} htop --version && ls /usr/bin/git | grep "/usr/bin/git"'
+  - 'docker exec ${container_id} git --version && ls /usr/bin/git | grep "/usr/bin/git"'
 
 # after_script:
