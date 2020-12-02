@@ -1,4 +1,4 @@
 ---
 - hosts: local
   roles:
-    - ansible-role-install-git
+    - role_under_test
