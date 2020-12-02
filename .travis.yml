@@ -4,8 +4,8 @@ language: python
 services: docker
 
 env:
-  - distro=ubuntu1204
-  - distro=ubuntu1404
+  - distro=centos6
+  - distro=centos7
   - distro=ubuntu1604
   - distro=ubuntu1804
   - distro=ubuntu2004
