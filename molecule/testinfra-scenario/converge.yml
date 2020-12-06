@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include ansible-role-install-git"
+      include_role:
+        name: "ansible-role-install-git"
